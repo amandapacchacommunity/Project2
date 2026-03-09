@@ -1,0 +1,31 @@
+risk_id,risk_category,risk_description,impact_level,probability_level,priority_level,mitigation_plan,planned_mitigation_impact,owner,status_summary,risk_area
+R001,Technology Risk,Dependence on cloud platforms and endpoint security creates exposure to cyber incidents and system outages.,5,4,20,Identity & Access Management,0.4,HR Systems Lead,On Track,IT Security
+R002,Technology Risk,Dependence on cloud platforms and endpoint security creates exposure to cyber incidents and system outages.,5,4,20,Security Monitoring,0.4,Director of IT Security,Needs Attention,IT Security
+R003,Technology Risk,Dependence on cloud platforms and endpoint security creates exposure to cyber incidents and system outages.,5,4,20,Staff Awareness,0.4,Director of IT Security,Needs Attention,IT Security
+R004,Financial Stability,"Shifts in tuition revenue, grants, and partner funding can pressure operating margins.",5,3,15,Revenue Diversification,0.4,FP&A Manager,On Track,Finance
+R005,Financial Stability,"Shifts in tuition revenue, grants, and partner funding can pressure operating margins.",5,3,15,Scenario Planning,0.5,Director of Partnerships,On Track,Finance
+R006,Financial Stability,"Shifts in tuition revenue, grants, and partner funding can pressure operating margins.",5,3,15,Reserve Management,0.4,Controller,On Track,Finance
+R007,Service Disruption,"Severe weather, vendor outages, or facility incidents could disrupt core services.",4,3,12,Business Continuity Planning,0.5,Business Continuity Manager,Needs Attention,Operations
+R008,Service Disruption,"Severe weather, vendor outages, or facility incidents could disrupt core services.",4,3,12,Remote Work Readiness,0.4,Operations Director,Needs Attention,Operations
+R009,Service Disruption,"Severe weather, vendor outages, or facility incidents could disrupt core services.",4,3,12,Insurance Review,0.4,Operations Director,On Track,Operations
+R010,Market Demand,Changes in learner preferences and employer demand may reduce program relevance.,4,3,12,Program Review,0.4,Dean of Programs,Needs Attention,Strategy
+R011,Market Demand,Changes in learner preferences and employer demand may reduce program relevance.,4,3,12,Advisory Council,0.5,Dean of Programs,Needs Attention,Strategy
+R012,Market Demand,Changes in learner preferences and employer demand may reduce program relevance.,4,3,12,Curriculum Refresh,0.4,Dean of Programs,On Track,Strategy
+R013,Facilities & Equipment,Aging equipment and deferred maintenance can affect safety and delivery quality.,4,2,8,Preventive Maintenance,0.4,Facilities Director,On Track,Facilities
+R014,Facilities & Equipment,Aging equipment and deferred maintenance can affect safety and delivery quality.,4,2,8,Capital Planning,0.5,Facilities Director,Needs Attention,Facilities
+R015,Facilities & Equipment,Aging equipment and deferred maintenance can affect safety and delivery quality.,4,2,8,Safety Inspections,0.5,Facilities Director,On Track,Facilities
+R016,Staffing Challenges,Turnover and hiring delays can reduce service continuity and institutional knowledge.,4,3,12,Compensation Review,0.5,Talent Acquisition Lead,On Track,HR
+R017,Staffing Challenges,Turnover and hiring delays can reduce service continuity and institutional knowledge.,4,3,12,Professional Development,0.4,HR Director,On Track,HR
+R018,Staffing Challenges,Turnover and hiring delays can reduce service continuity and institutional knowledge.,4,3,12,Workload Balancing,0.5,HR Director,On Track,HR
+R019,Health & Safety,"Safety incidents, emergency response gaps, or training failures can harm people and operations.",5,2,10,Safety Protocols,0.5,Safety Manager,On Track,Safety
+R020,Health & Safety,"Safety incidents, emergency response gaps, or training failures can harm people and operations.",5,2,10,Emergency Drills,0.4,Emergency Coordinator,Needs Attention,Safety
+R021,Health & Safety,"Safety incidents, emergency response gaps, or training failures can harm people and operations.",5,2,10,Training Program,0.4,Campus Operations Lead,On Track,Safety
+R022,Regulatory Compliance,"Policy, privacy, and reporting obligations may be missed without strong controls.",5,2,10,Policy Review,0.5,Compliance Officer,On Track,Compliance
+R023,Regulatory Compliance,"Policy, privacy, and reporting obligations may be missed without strong controls.",5,2,10,Internal Audit,0.4,Privacy Lead,On Track,Compliance
+R024,Regulatory Compliance,"Policy, privacy, and reporting obligations may be missed without strong controls.",5,2,10,Control Monitoring,0.5,Internal Audit Manager,On Track,Compliance
+R025,Reputation Management,"Public perception can deteriorate from misinformation, service failures, or negative coverage.",4,2,8,Proactive Communications,0.5,Student Success Director,On Track,Communications
+R026,Reputation Management,"Public perception can deteriorate from misinformation, service failures, or negative coverage.",4,2,8,Sentiment Monitoring,0.5,Student Success Director,Needs Attention,Communications
+R027,Reputation Management,"Public perception can deteriorate from misinformation, service failures, or negative coverage.",4,2,8,Issue Escalation,0.4,Communications Director,On Track,Communications
+R028,Third-Party Risk,"Key vendors may fail to meet security, uptime, or contractual expectations.",4,3,12,Vendor Due Diligence,0.4,IT Compliance Lead,On Track,Procurement
+R029,Third-Party Risk,"Key vendors may fail to meet security, uptime, or contractual expectations.",4,3,12,Contract Controls,0.4,Procurement Manager,On Track,Procurement
+R030,Third-Party Risk,"Key vendors may fail to meet security, uptime, or contractual expectations.",4,3,12,Continuity Testing,0.5,Vendor Risk Analyst,On Track,Procurement
