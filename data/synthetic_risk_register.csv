@@ -1,11 +1,11 @@
-risk_id,risk_category,risk_description,impact_level,probability_level,priority_level
-R001,Technology,"Dependence on cloud platforms and endpoint security may create exposure to cyber incidents and system outages.",5,4,20
-R002,Financial,"Shifts in tuition revenue, grants, and partner funding can pressure operating margins.",5,3,15
-R003,Service Disruption,"Severe weather, vendor outages, or facility incidents could disrupt core services.",4,3,12
-R004,Market Demand,"Changes in learner preferences and employer demand may reduce program relevance.",4,3,12
-R005,Facilities and Equipment,"Aging equipment and deferred maintenance can affect safety and delivery quality.",4,2,8
-R006,Staffing Challenges,"Turnover and hiring delays can reduce service continuity and institutional knowledge.",4,3,12
-R007,Health and Safety,"Safety incidents, emergency response gaps, or training failures can harm people and operations.",5,2,10
-R008,Regulatory Compliance,"Policy, privacy, and reporting obligations may be missed without strong controls.",5,2,10
-R009,Cybersecurity,"Phishing, weak access controls, and unmanaged devices may expose sensitive data.",5,4,20
-R010,Reputation,"Negative publicity or poor stakeholder communication may damage trust.",4,3,12
+risk_id,risk_category,risk_description,impact_level,probability_level,priority_level,owner
+R001,Technology,"Dependence on cloud platforms and endpoint security may create exposure to cyber incidents and system outages.",5,4,20,IT
+R002,Financial,"Shifts in tuition revenue, grants, and partner funding can pressure operating margins.",5,3,15,Finance
+R003,Service Disruption,"Severe weather, vendor outages, or facility incidents could disrupt core services.",4,3,12,Operations
+R004,Market Demand,"Changes in learner preferences and employer demand may reduce program relevance.",4,3,12,Strategy
+R005,Facilities and Equipment,"Aging equipment and deferred maintenance can affect safety and delivery quality.",4,2,8,Facilities
+R006,Staffing Challenges,"Turnover and hiring delays can reduce service continuity and institutional knowledge.",4,3,12,HR
+R007,Health and Safety,"Safety incidents, emergency response gaps, or training failures can harm people and operations.",5,2,10,Safety
+R008,Regulatory Compliance,"Policy, privacy, and reporting obligations may be missed without strong controls.",5,2,10,Compliance
+R009,Cybersecurity,"Phishing, weak access controls, and unmanaged devices may expose sensitive data.",5,4,20,Security
+R010,Reputation,"Negative publicity or poor stakeholder communication may damage trust.",4,3,12,Communications
