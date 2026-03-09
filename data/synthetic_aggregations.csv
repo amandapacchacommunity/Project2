@@ -1,0 +1,31 @@
+risk_category	mitigation_plan	total_actions	completed_actions	in_progress_actions	pending_actions	overdue_actions	mitigation_effect	impact_level	probability_level	priority_level	owner	status_summary	adjusted_score
+Technology Risk	Identity & Access Management	4	2	1	1	0	0.2	5	4	20	HR Systems Lead	On Track	20
+Technology Risk	Security Monitoring	4	0	4	0	0	0	5	4	20	Director of IT Security	Needs Attention	20
+Technology Risk	Staff Awareness	4	1	1	2	0	0.1	5	4	20	Director of IT Security	Needs Attention	20
+Financial Stability	Reserve Management	4	0	1	2	1	0	5	3	15	Controller	On Track	17
+Financial Stability	Revenue Diversification	4	1	0	2	1	0.1	5	3	15	FP&A Manager	On Track	17
+Financial Stability	Scenario Planning	5	1	2	1	1	0.1	5	3	15	Director of Partnerships	On Track	17
+Market Demand	Advisory Council	5	0	2	3	0	0	4	3	12	Dean of Programs	Needs Attention	12
+Market Demand	Curriculum Refresh	4	1	1	2	0	0.1	4	3	12	Dean of Programs	On Track	12
+Market Demand	Program Review	4	1	3	0	0	0.1	4	3	12	Dean of Programs	Needs Attention	12
+Service Disruption	Business Continuity Planning	5	3	1	1	0	0.3	4	3	12	Business Continuity Manager	Needs Attention	12
+Service Disruption	Insurance Review	4	0	3	1	0	0	4	3	12	Operations Director	On Track	12
+Service Disruption	Remote Work Readiness	4	0	2	2	0	0	4	3	12	Operations Director	Needs Attention	12
+Staffing Challenges	Compensation Review	5	0	3	2	0	0	4	3	12	Talent Acquisition Lead	On Track	12
+Staffing Challenges	Professional Development	4	2	0	2	0	0.2	4	3	12	HR Director	On Track	12
+Staffing Challenges	Workload Balancing	5	2	2	1	0	0.2	4	3	12	HR Director	On Track	12
+Third-Party Risk	Continuity Testing	5	0	4	1	0	0	4	3	12	Vendor Risk Analyst	On Track	12
+Third-Party Risk	Contract Controls	4	1	1	0	2	0.1	4	3	12	Procurement Manager	On Track	12
+Third-Party Risk	Vendor Due Diligence	4	1	2	0	1	0.1	4	3	12	IT Compliance Lead	On Track	12
+Health & Safety	Emergency Drills	4	1	0	2	1	0.1	5	2	10	Emergency Coordinator	Needs Attention	14
+Health & Safety	Safety Protocols	5	3	1	1	0	0.3	5	2	10	Safety Manager	On Track	14
+Health & Safety	Training Program	4	1	1	1	1	0.1	5	2	10	Campus Operations Lead	On Track	14
+Regulatory Compliance	Control Monitoring	5	0	5	0	0	0	5	2	10	Internal Audit Manager	On Track	14
+Regulatory Compliance	Internal Audit	4	1	2	1	0	0.1	5	2	10	Privacy Lead	On Track	14
+Regulatory Compliance	Policy Review	5	1	2	2	0	0.1	5	2	10	Compliance Officer	On Track	14
+Facilities & Equipment	Capital Planning	5	1	4	0	0	0.1	4	2	8	Facilities Director	Needs Attention	10
+Facilities & Equipment	Preventive Maintenance	4	0	2	1	1	0	4	2	8	Facilities Director	On Track	10
+Facilities & Equipment	Safety Inspections	5	1	1	3	0	0.1	4	2	8	Facilities Director	On Track	10
+Reputation Management	Issue Escalation	4	0	1	2	1	0	4	2	8	Communications Director	On Track	10
+Reputation Management	Proactive Communications	5	0	1	4	0	0	4	2	8	Student Success Director	On Track	10
+Reputation Management	Sentiment Monitoring	5	1	3	1	0	0.1	4	2	8	Student Success Director	Needs Attention	10
