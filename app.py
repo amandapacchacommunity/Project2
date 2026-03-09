@@ -125,10 +125,17 @@ heatmap = (
     .reset_index(name="count")
 )
 
-heatmap_matrix = heatmap.pivot(
-    index="probability_level",
-    columns="impact_level",
-    values="count"
-).fillna(0)
+st.subheader("Detailed Risk Register")
 
-st.dataframe(heatmap_matrix)
+def highlight_risk(val):
+    if val == "High":
+        return "background-color: #ff4b4b; color: white"
+    elif val == "Medium":
+        return "background-color: #ffa500"
+    elif val == "Low":
+        return "background-color: #3cb371; color: white"
+    return ""
+
+styled_df = filtered_df.style.applymap(highlight_risk, subset=["risk_level"])
+
+st.dataframe(styled_df, use_container_width=True)
