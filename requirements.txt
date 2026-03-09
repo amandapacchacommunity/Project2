@@ -3,3 +3,6 @@ numpy>=1.26.0
 streamlit>=1.36.0
 matplotlib>=3.8.0
 pytest>=8.0.0
+streamlit
+pandas
+plotly
