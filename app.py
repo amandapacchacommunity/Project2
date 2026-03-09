@@ -116,3 +116,19 @@ display_cols = [
 
 existing_cols = [col for col in display_cols if col in filtered_df.columns]
 st.dataframe(filtered_df[existing_cols], use_container_width=True)
+
+st.subheader("Risk Heatmap (Impact vs Probability)")
+
+heatmap = (
+    filtered_df.groupby(["probability_level", "impact_level"])
+    .size()
+    .reset_index(name="count")
+)
+
+heatmap_matrix = heatmap.pivot(
+    index="probability_level",
+    columns="impact_level",
+    values="count"
+).fillna(0)
+
+st.dataframe(heatmap_matrix)
