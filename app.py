@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import plotly.express as px
 
 st.set_page_config(page_title="Enterprise Risk Dashboard", layout="wide")
 
@@ -9,18 +10,19 @@ st.caption("Synthetic risk register analytics project")
 # Load data
 df = pd.read_csv("data/synthetic_risk_register.csv")
 
-# Make sure numeric columns are numeric
+# Clean numeric columns
 numeric_cols = ["impact_level", "probability_level", "priority_level"]
 for col in numeric_cols:
     if col in df.columns:
         df[col] = pd.to_numeric(df[col], errors="coerce")
 
-# Add owner if missing
+# Add owner column if missing
 if "owner" not in df.columns:
-    df["owner"] = [
+    default_owners = [
         "IT", "Finance", "Operations", "Strategy", "Facilities",
         "HR", "Safety", "Compliance", "Security", "Communications"
-    ][:len(df)]
+    ]
+    df["owner"] = (default_owners * ((len(df) // len(default_owners)) + 1))[:len(df)]
 
 # Create risk score
 df["risk_score"] = df["impact_level"] * df["probability_level"]
@@ -35,8 +37,9 @@ def classify_risk(score):
 
 df["risk_level"] = df["risk_score"].apply(classify_risk)
 
-# Sidebar filters
-st.sidebar.header("Filters")
+# Sidebar
+st.sidebar.title("Risk Analytics Dashboard")
+st.sidebar.markdown("Enterprise Risk Monitoring")
 
 selected_categories = st.sidebar.multiselect(
     "Risk Category",
@@ -62,7 +65,7 @@ filtered_df = df[
     (df["owner"].isin(selected_owners))
 ]
 
-# KPI cards
+# KPIs
 total_risks = len(filtered_df)
 high_risks = len(filtered_df[filtered_df["risk_level"] == "High"])
 avg_impact = round(filtered_df["impact_level"].mean(), 2) if total_risks > 0 else 0
@@ -74,6 +77,14 @@ col1.metric("Total Risks", total_risks)
 col2.metric("High Risks", high_risks)
 col3.metric("Avg Impact", avg_impact)
 col4.metric("Avg Probability", avg_probability)
+
+# Risk level distribution
+st.subheader("Risk Level Distribution")
+if not filtered_df.empty:
+    risk_counts = filtered_df["risk_level"].value_counts()
+    st.bar_chart(risk_counts)
+else:
+    st.warning("No data available for the selected filters.")
 
 # Risks by category
 st.subheader("Risks by Category")
@@ -87,22 +98,37 @@ category_counts = (
 if not category_counts.empty:
     st.bar_chart(category_counts.set_index("risk_category"))
 else:
-    st.warning("No data available for the selected filters.")
+    st.warning("No category data available.")
 
-# Risk matrix table
-st.subheader("Impact vs Probability Matrix")
-risk_matrix = (
-    filtered_df.groupby(["probability_level", "impact_level"])["risk_id"]
-    .count()
+# Risk heatmap
+st.subheader("Risk Heatmap")
+
+heatmap = (
+    filtered_df.groupby(["probability_level", "impact_level"])
+    .size()
     .reset_index(name="count")
-    .pivot(index="probability_level", columns="impact_level", values="count")
-    .fillna(0)
 )
 
-st.dataframe(risk_matrix, use_container_width=True)
+if not heatmap.empty:
+    fig = px.density_heatmap(
+        heatmap,
+        x="impact_level",
+        y="probability_level",
+        z="count",
+        color_continuous_scale="RdYlGn_r",
+        text_auto=True
+    )
+    fig.update_layout(
+        xaxis_title="Impact Level",
+        yaxis_title="Probability Level"
+    )
+    st.plotly_chart(fig, use_container_width=True)
+else:
+    st.warning("No heatmap data available.")
 
 # Detailed risk register
 st.subheader("Detailed Risk Register")
+
 display_cols = [
     "risk_id",
     "risk_category",
@@ -115,27 +141,28 @@ display_cols = [
 ]
 
 existing_cols = [col for col in display_cols if col in filtered_df.columns]
-st.dataframe(filtered_df[existing_cols], use_container_width=True)
-
-st.subheader("Risk Heatmap (Impact vs Probability)")
-
-heatmap = (
-    filtered_df.groupby(["probability_level", "impact_level"])
-    .size()
-    .reset_index(name="count")
-)
-
-st.subheader("Detailed Risk Register")
 
 def highlight_risk(val):
     if val == "High":
         return "background-color: #ff4b4b; color: white"
     elif val == "Medium":
-        return "background-color: #ffa500"
+        return "background-color: #ffa500; color: black"
     elif val == "Low":
         return "background-color: #3cb371; color: white"
     return ""
 
-styled_df = filtered_df.style.applymap(highlight_risk, subset=["risk_level"])
+if not filtered_df.empty:
+    styled_df = filtered_df[existing_cols].style.map(highlight_risk, subset=["risk_level"])
+    st.dataframe(styled_df, use_container_width=True)
+else:
+    st.warning("No detailed risks available.")
 
-st.dataframe(styled_df, use_container_width=True)
+# Download filtered data
+st.subheader("Download Filtered Data")
+csv = filtered_df.to_csv(index=False).encode("utf-8")
+st.download_button(
+    label="Download filtered risk data as CSV",
+    data=csv,
+    file_name="filtered_risk_data.csv",
+    mime="text/csv"
+)
