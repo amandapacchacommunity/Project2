@@ -1,0 +1,134 @@
+action_id	risk_category	mitigation_plan	action	mitigation_impact	deadline	owner	status	erm_bcm_management_type	management_detail	notes
+A0001	Technology Risk	Identity & Access Management	Review privileged accounts	0.1	2025-06-12	HR Systems Lead	Complete	Risk Treatment	Communication	Synthetic sample record
+A0002	Technology Risk	Identity & Access Management	Enforce MFA for all staff	0.1	2025-11-05	HR Systems Lead	In Progress	Recording & Reporting	Alignment	Synthetic sample record
+A0003	Technology Risk	Identity & Access Management	Rotate stale credentials	0.1	2025-06-25	HR Systems Lead	Pending	Risk Evaluation	Foresight	Synthetic action for demo use
+A0004	Technology Risk	Identity & Access Management	Disable inactive accounts	0.1	2025-11-20	HR Systems Lead	Complete	Risk Treatment	Adaptation	Generated for public repository
+A0005	Technology Risk	Security Monitoring	Tune SIEM alerts	0.1	2025-05-12	Director of IT Security	In Progress	Monitoring & Review	Focus	Synthetic sample record
+A0006	Technology Risk	Security Monitoring	Patch critical systems	0.1	2025-08-15	Director of IT Security	In Progress	Monitoring & Review	Alignment	Use for testing and prototyping
+A0007	Technology Risk	Security Monitoring	Review endpoint detections	0.1	2025-09-05	Director of IT Security	In Progress	Monitoring & Review	Learning	Generated for public repository
+A0008	Technology Risk	Security Monitoring	Run phishing simulation	0.1	2025-04-05	Director of IT Security	In Progress	Risk Treatment	Tolerance	Synthetic sample record
+A0009	Technology Risk	Staff Awareness	Launch awareness campaign	0.1	2025-08-12	Director of IT Security	Pending	Monitoring & Review	Execution	Synthetic action for demo use
+A0010	Technology Risk	Staff Awareness	Update training content	0.1	2025-04-25	Director of IT Security	In Progress	Risk Treatment	Foresight	Synthetic action for demo use
+A0011	Technology Risk	Staff Awareness	Track completion rates	0.1	2025-09-15	Director of IT Security	Pending	Risk Treatment	Learning	Generated for public repository
+A0012	Technology Risk	Staff Awareness	Target high-risk groups	0.1	2025-03-12	Director of IT Security	Complete	Risk Evaluation	Execution	Use for testing and prototyping
+A0013	Financial Stability	Revenue Diversification	Launch short certificate	0.1	2025-08-12	FP&A Manager	Overdue	Recording & Reporting	Validation	Use for testing and prototyping
+A0014	Financial Stability	Revenue Diversification	Create employer-sponsored cohort	0.1	2025-05-12	FP&A Manager	Pending	Monitoring & Review	Communication	Use for testing and prototyping
+A0015	Financial Stability	Revenue Diversification	Expand alumni giving outreach	0.1	2025-09-15	FP&A Manager	Complete	Risk Treatment	Reduction	Use for testing and prototyping
+A0016	Financial Stability	Revenue Diversification	Submit grant proposals	0.1	2025-03-05	FP&A Manager	Pending	Risk Treatment	Learning	Synthetic action for demo use
+A0017	Financial Stability	Scenario Planning	Refresh revenue forecast	0.1	2025-10-25	Director of Partnerships	In Progress	Monitoring & Review	Foresight	Synthetic sample record
+A0018	Financial Stability	Scenario Planning	Model downside scenarios	0.1	2025-04-28	Director of Partnerships	In Progress	Monitoring & Review	Learning	Generated for public repository
+A0019	Financial Stability	Scenario Planning	Review expense triggers	0.1	2025-09-12	Director of Partnerships	Pending	Recording & Reporting	Alignment	Generated for public repository
+A0020	Financial Stability	Scenario Planning	Update cost containment plan	0.1	2025-05-25	Director of Partnerships	Overdue	Risk Evaluation	Learning	Generated for public repository
+A0021	Financial Stability	Scenario Planning	Review pricing assumptions	0.1	2025-11-25	Director of Partnerships	Complete	Risk Treatment	Reduction	Generated for public repository
+A0022	Financial Stability	Reserve Management	Set reserve policy	0.1	2025-04-15	Controller	In Progress	Monitoring & Review	Distribution	Synthetic sample record
+A0023	Financial Stability	Reserve Management	Track reserve ratio	0.1	2025-04-05	Controller	Pending	Recording & Reporting	Focus	Synthetic action for demo use
+A0024	Financial Stability	Reserve Management	Review liquidity targets	0.1	2025-10-25	Controller	Pending	Risk Treatment	Tolerance	Use for testing and prototyping
+A0025	Financial Stability	Reserve Management	Rebalance reserve allocation	0.1	2025-11-28	Controller	Overdue	Risk Treatment	Communication	Generated for public repository
+A0026	Service Disruption	Business Continuity Planning	Update continuity plan	0.1	2025-10-05	Business Continuity Manager	Complete	Risk Treatment	Distribution	Synthetic sample record
+A0027	Service Disruption	Business Continuity Planning	Identify critical processes	0.1	2025-11-12	Business Continuity Manager	In Progress	Risk Treatment	Alignment	Synthetic sample record
+A0028	Service Disruption	Business Continuity Planning	Confirm recovery owners	0.1	2025-03-12	Business Continuity Manager	Complete	Risk Evaluation	Alignment	Generated for public repository
+A0029	Service Disruption	Business Continuity Planning	Map alternate workflows	0.1	2025-06-15	Business Continuity Manager	Pending	Recording & Reporting	Distribution	Synthetic action for demo use
+A0030	Service Disruption	Business Continuity Planning	Review contact trees	0.1	2025-10-12	Business Continuity Manager	Complete	Recording & Reporting	Validation	Synthetic action for demo use
+A0031	Service Disruption	Remote Work Readiness	Test VPN capacity	0.1	2025-09-20	Operations Director	In Progress	Risk Evaluation	Learning	Synthetic sample record
+A0032	Service Disruption	Remote Work Readiness	Provision spare devices	0.1	2025-08-05	Operations Director	Pending	Risk Treatment	Distribution	Synthetic action for demo use
+A0033	Service Disruption	Remote Work Readiness	Document remote support steps	0.1	2025-05-20	Operations Director	In Progress	Risk Treatment	Tolerance	Use for testing and prototyping
+A0034	Service Disruption	Remote Work Readiness	Run remote access drill	0.1	2025-04-20	Operations Director	Pending	Risk Evaluation	Alignment	Synthetic sample record
+A0035	Service Disruption	Insurance Review	Review policy coverage	0.1	2025-10-12	Operations Director	In Progress	Recording & Reporting	Alignment	Synthetic action for demo use
+A0036	Service Disruption	Insurance Review	Confirm renewal dates	0.1	2025-09-15	Operations Director	In Progress	Recording & Reporting	Tolerance	Use for testing and prototyping
+A0037	Service Disruption	Insurance Review	Assess deductibles	0.1	2025-11-28	Operations Director	In Progress	Recording & Reporting	Reduction	Synthetic action for demo use
+A0038	Service Disruption	Insurance Review	Validate insured assets	0.1	2025-03-25	Operations Director	Pending	Risk Evaluation	Communication	Generated for public repository
+A0039	Market Demand	Program Review	Review enrollment trends	0.1	2025-11-12	Dean of Programs	In Progress	Risk Evaluation	Foresight	Synthetic sample record
+A0040	Market Demand	Program Review	Compare competitor offerings	0.1	2025-04-25	Dean of Programs	Complete	Risk Evaluation	Learning	Synthetic action for demo use
+A0041	Market Demand	Program Review	Analyze completion rates	0.1	2025-06-25	Dean of Programs	In Progress	Risk Evaluation	Accountability	Synthetic sample record
+A0042	Market Demand	Program Review	Survey graduates	0.1	2025-11-15	Dean of Programs	In Progress	Monitoring & Review	Distribution	Generated for public repository
+A0043	Market Demand	Advisory Council	Recruit industry advisors	0.1	2025-07-20	Dean of Programs	Pending	Monitoring & Review	Focus	Synthetic sample record
+A0044	Market Demand	Advisory Council	Schedule quarterly meeting	0.1	2025-04-05	Dean of Programs	In Progress	Risk Treatment	Foresight	Generated for public repository
+A0045	Market Demand	Advisory Council	Capture recommendations	0.1	2025-08-05	Dean of Programs	Pending	Risk Treatment	Execution	Generated for public repository
+A0046	Market Demand	Advisory Council	Review skills demand	0.1	2025-11-28	Dean of Programs	Pending	Monitoring & Review	Accountability	Synthetic sample record
+A0047	Market Demand	Advisory Council	Share follow-up plan	0.1	2025-11-15	Dean of Programs	In Progress	Risk Evaluation	Reduction	Generated for public repository
+A0048	Market Demand	Curriculum Refresh	Pilot revised module	0.1	2025-06-28	Dean of Programs	Pending	Monitoring & Review	Distribution	Generated for public repository
+A0049	Market Demand	Curriculum Refresh	Map curriculum to demand	0.1	2025-07-05	Dean of Programs	In Progress	Risk Evaluation	Learning	Use for testing and prototyping
+A0050	Market Demand	Curriculum Refresh	Review learning outcomes	0.1	2025-03-05	Dean of Programs	Complete	Monitoring & Review	Reduction	Generated for public repository
+A0051	Market Demand	Curriculum Refresh	Test new delivery format	0.1	2025-10-25	Dean of Programs	Pending	Recording & Reporting	Foresight	Synthetic sample record
+A0052	Facilities & Equipment	Preventive Maintenance	Inspect HVAC systems	0.1	2025-08-25	Facilities Director	In Progress	Risk Treatment	Validation	Synthetic action for demo use
+A0053	Facilities & Equipment	Preventive Maintenance	Service lab equipment	0.1	2025-08-05	Facilities Director	Pending	Monitoring & Review	Distribution	Synthetic action for demo use
+A0054	Facilities & Equipment	Preventive Maintenance	Update maintenance log	0.1	2025-08-25	Facilities Director	In Progress	Recording & Reporting	Accountability	Synthetic action for demo use
+A0055	Facilities & Equipment	Preventive Maintenance	Replace worn components	0.1	2025-06-12	Facilities Director	Overdue	Risk Treatment	Validation	Synthetic sample record
+A0056	Facilities & Equipment	Capital Planning	Refresh asset inventory	0.1	2025-06-15	Facilities Director	Complete	Risk Treatment	Communication	Synthetic sample record
+A0057	Facilities & Equipment	Capital Planning	Prioritize major replacements	0.1	2025-03-20	Facilities Director	In Progress	Risk Treatment	Distribution	Use for testing and prototyping
+A0058	Facilities & Equipment	Capital Planning	Estimate capital needs	0.1	2025-06-12	Facilities Director	In Progress	Risk Evaluation	Learning	Synthetic action for demo use
+A0059	Facilities & Equipment	Capital Planning	Review lifecycle schedules	0.1	2025-07-05	Facilities Director	In Progress	Monitoring & Review	Execution	Use for testing and prototyping
+A0060	Facilities & Equipment	Capital Planning	Publish capital roadmap	0.1	2025-11-15	Facilities Director	In Progress	Risk Evaluation	Focus	Generated for public repository
+A0061	Facilities & Equipment	Safety Inspections	Complete site walkthrough	0.1	2025-09-15	Facilities Director	Pending	Monitoring & Review	Validation	Synthetic sample record
+A0062	Facilities & Equipment	Safety Inspections	Log hazard findings	0.1	2025-06-15	Facilities Director	In Progress	Risk Evaluation	Communication	Use for testing and prototyping
+A0063	Facilities & Equipment	Safety Inspections	Verify corrective actions	0.1	2025-11-28	Facilities Director	Pending	Risk Treatment	Execution	Use for testing and prototyping
+A0064	Facilities & Equipment	Safety Inspections	Review signage placement	0.1	2025-08-25	Facilities Director	Pending	Monitoring & Review	Learning	Synthetic sample record
+A0065	Facilities & Equipment	Safety Inspections	Confirm PPE availability	0.1	2025-07-25	Facilities Director	Complete	Monitoring & Review	Learning	Use for testing and prototyping
+A0066	Staffing Challenges	Compensation Review	Benchmark salaries	0.1	2025-06-20	Talent Acquisition Lead	In Progress	Recording & Reporting	Learning	Synthetic action for demo use
+A0067	Staffing Challenges	Compensation Review	Review pay compression	0.1	2025-07-20	Talent Acquisition Lead	In Progress	Risk Evaluation	Tolerance	Generated for public repository
+A0068	Staffing Challenges	Compensation Review	Update compensation bands	0.1	2025-08-20	Talent Acquisition Lead	Pending	Recording & Reporting	Adaptation	Synthetic action for demo use
+A0069	Staffing Challenges	Compensation Review	Draft retention proposal	0.1	2025-05-28	Talent Acquisition Lead	In Progress	Risk Evaluation	Tolerance	Generated for public repository
+A0070	Staffing Challenges	Compensation Review	Prepare leadership brief	0.1	2025-06-28	Talent Acquisition Lead	Pending	Monitoring & Review	Distribution	Synthetic action for demo use
+A0071	Staffing Challenges	Professional Development	Create training calendar	0.1	2025-10-25	HR Director	Pending	Risk Evaluation	Adaptation	Use for testing and prototyping
+A0072	Staffing Challenges	Professional Development	Fund certifications	0.1	2025-06-28	HR Director	Complete	Recording & Reporting	Adaptation	Use for testing and prototyping
+A0073	Staffing Challenges	Professional Development	Launch mentoring program	0.1	2025-03-05	HR Director	Pending	Recording & Reporting	Distribution	Synthetic action for demo use
+A0074	Staffing Challenges	Professional Development	Track skill development	0.1	2025-11-20	HR Director	Complete	Risk Evaluation	Foresight	Synthetic action for demo use
+A0075	Staffing Challenges	Workload Balancing	Review capacity by team	0.1	2025-11-25	HR Director	Complete	Monitoring & Review	Adaptation	Use for testing and prototyping
+A0076	Staffing Challenges	Workload Balancing	Reassign low-value work	0.1	2025-11-20	HR Director	Complete	Risk Treatment	Communication	Use for testing and prototyping
+A0077	Staffing Challenges	Workload Balancing	Document process bottlenecks	0.1	2025-06-28	HR Director	In Progress	Monitoring & Review	Foresight	Use for testing and prototyping
+A0078	Staffing Challenges	Workload Balancing	Add temporary support	0.1	2025-07-20	HR Director	In Progress	Risk Evaluation	Communication	Generated for public repository
+A0079	Staffing Challenges	Workload Balancing	Measure overtime trends	0.1	2025-08-15	HR Director	Pending	Risk Evaluation	Reduction	Synthetic action for demo use
+A0080	Health & Safety	Safety Protocols	Review incident procedures	0.1	2025-04-20	Safety Manager	Complete	Recording & Reporting	Execution	Use for testing and prototyping
+A0081	Health & Safety	Safety Protocols	Replenish first aid kits	0.1	2025-06-20	Safety Manager	In Progress	Recording & Reporting	Accountability	Synthetic sample record
+A0082	Health & Safety	Safety Protocols	Audit access controls	0.1	2025-09-20	Safety Manager	Complete	Risk Evaluation	Execution	Generated for public repository
+A0083	Health & Safety	Safety Protocols	Inspect emergency exits	0.1	2025-09-25	Safety Manager	Complete	Risk Treatment	Adaptation	Synthetic action for demo use
+A0084	Health & Safety	Safety Protocols	Refresh safety signage	0.1	2025-10-05	Safety Manager	Pending	Recording & Reporting	Execution	Use for testing and prototyping
+A0085	Health & Safety	Emergency Drills	Run fire drill	0.1	2025-11-05	Emergency Coordinator	Overdue	Recording & Reporting	Accountability	Synthetic sample record
+A0086	Health & Safety	Emergency Drills	Run tabletop exercise	0.1	2025-09-12	Emergency Coordinator	Pending	Recording & Reporting	Reduction	Synthetic sample record
+A0087	Health & Safety	Emergency Drills	Test notification system	0.1	2025-08-12	Emergency Coordinator	Pending	Recording & Reporting	Execution	Generated for public repository
+A0088	Health & Safety	Emergency Drills	Capture lessons learned	0.1	2025-09-15	Emergency Coordinator	Complete	Recording & Reporting	Tolerance	Synthetic sample record
+A0089	Health & Safety	Training Program	Update onboarding content	0.1	2025-08-12	Campus Operations Lead	Overdue	Risk Evaluation	Learning	Synthetic sample record
+A0090	Health & Safety	Training Program	Deliver annual refresher	0.1	2025-06-12	Campus Operations Lead	Complete	Risk Evaluation	Accountability	Synthetic action for demo use
+A0091	Health & Safety	Training Program	Assess knowledge retention	0.1	2025-10-28	Campus Operations Lead	Pending	Risk Evaluation	Accountability	Synthetic action for demo use
+A0092	Health & Safety	Training Program	Track attendance	0.1	2025-07-15	Campus Operations Lead	In Progress	Risk Treatment	Accountability	Synthetic sample record
+A0093	Regulatory Compliance	Policy Review	Review policy inventory	0.1	2025-07-25	Compliance Officer	In Progress	Recording & Reporting	Validation	Synthetic action for demo use
+A0094	Regulatory Compliance	Policy Review	Update privacy notice	0.1	2025-06-05	Compliance Officer	Pending	Monitoring & Review	Learning	Synthetic sample record
+A0095	Regulatory Compliance	Policy Review	Clarify retention rules	0.1	2025-03-15	Compliance Officer	Complete	Recording & Reporting	Learning	Generated for public repository
+A0096	Regulatory Compliance	Policy Review	Publish policy changes	0.1	2025-08-05	Compliance Officer	Pending	Recording & Reporting	Adaptation	Synthetic sample record
+A0097	Regulatory Compliance	Policy Review	Obtain annual attestations	0.1	2025-08-28	Compliance Officer	In Progress	Recording & Reporting	Communication	Synthetic action for demo use
+A0098	Regulatory Compliance	Internal Audit	Test key controls	0.1	2025-11-20	Privacy Lead	In Progress	Recording & Reporting	Validation	Generated for public repository
+A0099	Regulatory Compliance	Internal Audit	Review exception logs	0.1	2025-06-05	Privacy Lead	In Progress	Monitoring & Review	Adaptation	Synthetic action for demo use
+A0100	Regulatory Compliance	Internal Audit	Audit access reviews	0.1	2025-09-15	Privacy Lead	Complete	Risk Evaluation	Adaptation	Generated for public repository
+A0101	Regulatory Compliance	Internal Audit	Validate evidence retention	0.1	2025-06-15	Privacy Lead	Pending	Monitoring & Review	Execution	Generated for public repository
+A0102	Regulatory Compliance	Control Monitoring	Track overdue controls	0.1	2025-06-05	Internal Audit Manager	In Progress	Risk Treatment	Communication	Use for testing and prototyping
+A0103	Regulatory Compliance	Control Monitoring	Review control failures	0.1	2025-06-28	Internal Audit Manager	In Progress	Recording & Reporting	Learning	Use for testing and prototyping
+A0104	Regulatory Compliance	Control Monitoring	Update risk indicators	0.1	2025-03-05	Internal Audit Manager	In Progress	Monitoring & Review	Distribution	Use for testing and prototyping
+A0105	Regulatory Compliance	Control Monitoring	Escalate unresolved items	0.1	2025-07-28	Internal Audit Manager	In Progress	Monitoring & Review	Adaptation	Generated for public repository
+A0106	Regulatory Compliance	Control Monitoring	Refresh compliance dashboard	0.1	2025-11-15	Internal Audit Manager	In Progress	Monitoring & Review	Communication	Use for testing and prototyping
+A0107	Reputation Management	Proactive Communications	Prepare holding statements	0.1	2025-06-15	Student Success Director	Pending	Risk Evaluation	Communication	Synthetic action for demo use
+A0108	Reputation Management	Proactive Communications	Publish monthly updates	0.1	2025-10-15	Student Success Director	Pending	Monitoring & Review	Focus	Synthetic action for demo use
+A0109	Reputation Management	Proactive Communications	Coordinate stakeholder messaging	0.1	2025-08-12	Student Success Director	Pending	Monitoring & Review	Alignment	Synthetic action for demo use
+A0110	Reputation Management	Proactive Communications	Review spokesperson list	0.1	2025-03-25	Student Success Director	Pending	Monitoring & Review	Communication	Synthetic action for demo use
+A0111	Reputation Management	Proactive Communications	Monitor issue response times	0.1	2025-10-05	Student Success Director	In Progress	Risk Evaluation	Accountability	Generated for public repository
+A0112	Reputation Management	Sentiment Monitoring	Track media mentions	0.1	2025-03-15	Student Success Director	In Progress	Recording & Reporting	Focus	Synthetic sample record
+A0113	Reputation Management	Sentiment Monitoring	Monitor social channels	0.1	2025-04-25	Student Success Director	In Progress	Risk Evaluation	Reduction	Synthetic action for demo use
+A0114	Reputation Management	Sentiment Monitoring	Review support trends	0.1	2025-07-05	Student Success Director	Complete	Risk Treatment	Focus	Use for testing and prototyping
+A0115	Reputation Management	Sentiment Monitoring	Flag misinformation	0.1	2025-06-25	Student Success Director	In Progress	Recording & Reporting	Adaptation	Use for testing and prototyping
+A0116	Reputation Management	Sentiment Monitoring	Summarize weekly sentiment	0.1	2025-09-15	Student Success Director	Pending	Risk Evaluation	Accountability	Synthetic sample record
+A0117	Reputation Management	Issue Escalation	Define escalation matrix	0.1	2025-05-12	Communications Director	In Progress	Risk Treatment	Foresight	Synthetic sample record
+A0118	Reputation Management	Issue Escalation	Log reputational incidents	0.1	2025-09-20	Communications Director	Pending	Recording & Reporting	Tolerance	Synthetic sample record
+A0119	Reputation Management	Issue Escalation	Assign response owners	0.1	2025-07-28	Communications Director	Pending	Recording & Reporting	Focus	Synthetic action for demo use
+A0120	Reputation Management	Issue Escalation	Conduct post-incident review	0.1	2025-06-20	Communications Director	Overdue	Risk Evaluation	Foresight	Synthetic action for demo use
+A0121	Third-Party Risk	Vendor Due Diligence	Assess vendor controls	0.1	2025-04-05	IT Compliance Lead	Complete	Risk Treatment	Tolerance	Generated for public repository
+A0122	Third-Party Risk	Vendor Due Diligence	Review SOC reports	0.1	2025-10-28	IT Compliance Lead	In Progress	Monitoring & Review	Communication	Use for testing and prototyping
+A0123	Third-Party Risk	Vendor Due Diligence	Score critical suppliers	0.1	2025-11-25	IT Compliance Lead	Overdue	Recording & Reporting	Adaptation	Synthetic sample record
+A0124	Third-Party Risk	Vendor Due Diligence	Confirm data handling terms	0.1	2025-09-28	IT Compliance Lead	In Progress	Monitoring & Review	Accountability	Generated for public repository
+A0125	Third-Party Risk	Contract Controls	Standardize security clauses	0.1	2025-03-28	Procurement Manager	Overdue	Monitoring & Review	Accountability	Synthetic sample record
+A0126	Third-Party Risk	Contract Controls	Review renewal risks	0.1	2025-05-20	Procurement Manager	Complete	Recording & Reporting	Tolerance	Synthetic action for demo use
+A0127	Third-Party Risk	Contract Controls	Map critical dependencies	0.1	2025-09-28	Procurement Manager	Overdue	Recording & Reporting	Focus	Use for testing and prototyping
+A0128	Third-Party Risk	Contract Controls	Confirm SLA metrics	0.1	2025-08-15	Procurement Manager	In Progress	Risk Evaluation	Reduction	Generated for public repository
+A0129	Third-Party Risk	Continuity Testing	Run vendor failover test	0.1	2025-09-25	Vendor Risk Analyst	In Progress	Risk Evaluation	Adaptation	Synthetic sample record
+A0130	Third-Party Risk	Continuity Testing	Verify alternate suppliers	0.1	2025-08-05	Vendor Risk Analyst	In Progress	Recording & Reporting	Foresight	Synthetic sample record
+A0131	Third-Party Risk	Continuity Testing	Test manual workaround	0.1	2025-11-20	Vendor Risk Analyst	In Progress	Recording & Reporting	Alignment	Synthetic action for demo use
+A0132	Third-Party Risk	Continuity Testing	Review communication paths	0.1	2025-10-28	Vendor Risk Analyst	In Progress	Recording & Reporting	Alignment	Synthetic action for demo use
+A0133	Third-Party Risk	Continuity Testing	Document lessons learned	0.1	2025-05-15	Vendor Risk Analyst	Pending	Recording & Reporting	Communication	Use for testing and prototyping
