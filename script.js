@@ -58,8 +58,8 @@ function renderCategoryChart(data) {
       y: values,
       type: "bar",
       marker: {
-        color: "#5b8cff",
-        line: { color: "#88adff", width: 1.2 }
+        color: "#60a5fa",
+        line: { color: "#93c5fd", width: 1 }
       },
       text: values,
       textposition: "outside",
@@ -68,10 +68,10 @@ function renderCategoryChart(data) {
     {
       paper_bgcolor: "rgba(0,0,0,0)",
       plot_bgcolor: "rgba(0,0,0,0)",
-      font: { color: "#dbe5f5" },
+      font: { color: "#e5ecf6" },
       margin: { t: 10, l: 45, r: 10, b: 90 },
       xaxis: { tickangle: -25, gridcolor: "rgba(255,255,255,0.06)" },
-      yaxis: { title: "Count", gridcolor: "rgba(255,255,255,0.06)", zerolinecolor: "rgba(255,255,255,0.06)" }
+      yaxis: { title: "Count", gridcolor: "rgba(255,255,255,0.06)" }
     },
     { responsive: true, displayModeBar: false }
   );
@@ -89,7 +89,7 @@ function renderRiskLevelChart(data) {
       labels: Object.keys(levelCounts),
       values: Object.values(levelCounts),
       type: "pie",
-      hole: 0.6,
+      hole: 0.62,
       textinfo: "label+value",
       marker: {
         colors: ["#ef4444", "#facc15", "#22c55e"]
@@ -98,7 +98,7 @@ function renderRiskLevelChart(data) {
     }],
     {
       paper_bgcolor: "rgba(0,0,0,0)",
-      font: { color: "#dbe5f5" },
+      font: { color: "#e5ecf6" },
       margin: { t: 10, l: 10, r: 10, b: 10 },
       showlegend: false
     },
@@ -186,7 +186,7 @@ function renderRiskMatrix(data) {
     {
       paper_bgcolor: "rgba(0,0,0,0)",
       plot_bgcolor: "rgba(0,0,0,0)",
-      font: { color: "#dbe5f5" },
+      font: { color: "#e5ecf6" },
       margin: { t: 10, l: 50, r: 10, b: 50 },
       xaxis: { title: "Impact", dtick: 1 },
       yaxis: { title: "Probability", dtick: 1 }
@@ -259,7 +259,7 @@ function renderOwnerChart(data) {
     {
       paper_bgcolor: "rgba(0,0,0,0)",
       plot_bgcolor: "rgba(0,0,0,0)",
-      font: { color: "#dbe5f5" },
+      font: { color: "#e5ecf6" },
       margin: { t: 10, l: 45, r: 10, b: 90 },
       xaxis: { tickangle: -25, gridcolor: "rgba(255,255,255,0.06)" },
       yaxis: { title: "Average Risk Score", gridcolor: "rgba(255,255,255,0.06)" }
@@ -296,7 +296,7 @@ function renderSelectedCellInfo(impact, probability, filteredRisks) {
   infoBox.innerHTML = `
     <strong>Filtered View:</strong> Impact ${impact} × Probability ${probability}
     <br>
-    <span style="color:#9aa8bf;">Showing ${filteredRisks.length} risk(s) from the selected matrix cell.</span>
+    <span style="color:#c6d4ea;">Showing ${filteredRisks.length} risk(s) from the selected matrix cell.</span>
     <br>
     <button class="reset-btn" onclick="resetTable()">Reset Table</button>
   `;
