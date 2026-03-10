@@ -3,118 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enterprise Risk Dashboard</title>
+  <title>Enterprise Risk Dashboard | Amanda Paccha</title>
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
 <body>
-  <div class="page">
+  <div class="page-shell">
     <aside class="sidebar">
-      <div class="brand">
-        <div class="brand-badge">ER</div>
+      <div class="brand-block">
+        <div class="brand-icon">ER</div>
         <div>
           <h2>Risk Analytics</h2>
-          <p>Executive Monitoring</p>
+          <p>Portfolio Dashboard</p>
         </div>
       </div>
 
-      <nav class="nav">
+      <div class="profile-card">
+        <p class="section-label">Featured Project</p>
+        <h3>Enterprise Risk Dashboard</h3>
+        <p>
+          Resume-ready analytics project demonstrating dashboard design, risk scoring,
+          executive reporting, and interactive visualization.
+        </p>
+      </div>
+
+      <nav class="nav-links">
         <a href="#overview">Overview</a>
-        <a href="#distribution">Distribution</a>
+        <a href="#charts">Charts</a>
         <a href="#matrix">Risk Matrix</a>
         <a href="#register">Risk Register</a>
       </nav>
-
-      <div class="sidebar-note">
-        <p class="small-label">Project Type</p>
-        <p>Synthetic enterprise risk analytics portfolio dashboard.</p>
-      </div>
     </aside>
 
-    <main class="main">
-      <section class="hero" id="overview">
+    <main class="main-content">
+      <section class="hero-card" id="overview">
         <div>
-          <p class="eyebrow">Portfolio Project</p>
+          <p class="section-label">Amanda Paccha · Data Analytics Portfolio</p>
           <h1>Enterprise Risk Dashboard</h1>
           <p class="hero-text">
-            Executive overview of synthetic enterprise risk exposure, prioritization,
-            and category-level monitoring.
+            Executive-style dashboard built with HTML, CSS, JavaScript, and Plotly using
+            synthetic enterprise risk data. Designed to present risk exposure, severity,
+            ownership, and prioritization in a polished, portfolio-ready format.
           </p>
+
+          <div class="hero-tags">
+            <span>JavaScript</span>
+            <span>Plotly</span>
+            <span>Dashboard Design</span>
+            <span>Risk Analytics</span>
+          </div>
         </div>
-        <div class="hero-chip">Board Reporting View</div>
+
+        <div class="hero-side">
+          <div class="mini-stat">
+            <span>Project Type</span>
+            <strong>Interactive Web Dashboard</strong>
+          </div>
+          <div class="mini-stat">
+            <span>Data</span>
+            <strong>Synthetic Enterprise Risk Register</strong>
+          </div>
+        </div>
       </section>
 
-      <section class="cards">
-        <div class="card">
+      <section class="kpi-grid">
+        <div class="kpi-card">
           <span>Total Risks</span>
           <strong id="totalRisks">0</strong>
-          <small>Active portfolio risks</small>
+          <small>Portfolio exposures tracked</small>
         </div>
-        <div class="card">
+        <div class="kpi-card">
           <span>High Risks</span>
           <strong id="highRisks">0</strong>
-          <small>Priority exposures</small>
+          <small>Critical priority items</small>
         </div>
-        <div class="card">
+        <div class="kpi-card">
           <span>Avg Impact</span>
           <strong id="avgImpact">0</strong>
-          <small>Average severity</small>
+          <small>Severity across risks</small>
         </div>
-        <div class="card">
+        <div class="kpi-card">
           <span>Avg Probability</span>
           <strong id="avgProbability">0</strong>
-          <small>Average likelihood</small>
+          <small>Likelihood across risks</small>
         </div>
       </section>
 
-      <section class="two-col" id="distribution">
-        <div class="panel">
-          <div class="panel-head">
+      <section class="chart-grid" id="charts">
+        <div class="tile">
+          <div class="tile-header">
             <h2>Risks by Category</h2>
             <p>Distribution across business domains</p>
           </div>
-          <div id="categoryChart" class="chart"></div>
+          <div id="categoryChart" class="chart-box"></div>
         </div>
 
-        <div class="panel">
-          <div class="panel-head">
+        <div class="tile">
+          <div class="tile-header">
             <h2>Risk Level Mix</h2>
             <p>Portfolio composition by severity</p>
           </div>
-          <div id="riskLevelChart" class="chart"></div>
+          <div id="riskLevelChart" class="chart-box"></div>
         </div>
       </section>
 
-      <section class="panel full-width" id="matrix">
-        <div class="panel-head">
+      <section class="tile full-width" id="matrix">
+        <div class="tile-header">
           <h2>5×5 Enterprise Risk Matrix</h2>
-          <p>Impact versus probability heatmap</p>
+          <p>Impact versus probability with interactive hover and click filtering</p>
         </div>
-        <div id="riskMatrix" class="chart matrix-chart"></div>
+        <div id="riskMatrix" class="chart-box matrix-box"></div>
       </section>
 
-      <section class="two-col lower-grid">
-        <div class="panel">
-          <div class="panel-head">
+      <section class="chart-grid">
+        <div class="tile">
+          <div class="tile-header">
             <h2>Top Risks</h2>
             <p>Highest scoring exposures</p>
           </div>
           <div class="top-risk-list" id="topRisks"></div>
         </div>
 
-        <div class="panel">
-          <div class="panel-head">
+        <div class="tile">
+          <div class="tile-header">
             <h2>Risk Score by Owner</h2>
             <p>Average risk score across owners</p>
           </div>
-          <div id="ownerChart" class="chart"></div>
+          <div id="ownerChart" class="chart-box"></div>
         </div>
       </section>
 
-      <section class="panel full-width" id="register">
-        <div class="panel-head">
+      <section class="tile full-width" id="register">
+        <div class="tile-header">
           <h2>Detailed Risk Register</h2>
-          <p>Prioritized synthetic risk inventory</p>
+          <p>Interactive prioritized view of the synthetic risk inventory</p>
         </div>
 
         <div id="selectedCellInfo" class="selected-cell-info hidden"></div>
