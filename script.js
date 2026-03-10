@@ -105,3 +105,46 @@ function renderRiskMatrix(data) {
     renderSelectedCellInfo(clickedImpact, clickedProbability, filtered);
   });
 }
+function renderSelectedCellInfo(impact, probability, filteredRisks) {
+  let infoBox = document.getElementById("selectedCellInfo");
+
+  if (!infoBox) {
+    infoBox = document.createElement("div");
+    infoBox.id = "selectedCellInfo";
+    infoBox.style.marginBottom = "16px";
+    infoBox.style.padding = "14px 16px";
+    infoBox.style.borderRadius = "14px";
+    infoBox.style.background = "rgba(255,255,255,0.04)";
+    infoBox.style.border = "1px solid rgba(255,255,255,0.08)";
+    infoBox.style.color = "#dbe5f5";
+
+    const registerSection = document.getElementById("register");
+    registerSection.insertBefore(infoBox, registerSection.querySelector(".table-wrap"));
+  }
+
+  infoBox.innerHTML = `
+    <strong>Filtered View:</strong> Impact ${impact} × Probability ${probability}
+    <br>
+    <span style="color:#9aa8bf;">Showing ${filteredRisks.length} risk(s) from the selected matrix cell.</span>
+    <br><br>
+    <button onclick="resetTable()" style="
+      background:#5b8cff;
+      color:white;
+      border:none;
+      padding:8px 12px;
+      border-radius:10px;
+      cursor:pointer;
+      font-weight:600;
+    ">
+      Reset Table
+    </button>
+  `;
+}
+function resetTable() {
+  renderTable(enrichedRisks);
+
+  const infoBox = document.getElementById("selectedCellInfo");
+  if (infoBox) {
+    infoBox.remove();
+  }
+}
