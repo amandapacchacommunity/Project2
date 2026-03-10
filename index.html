@@ -8,54 +8,114 @@
   <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div>
-        <p class="eyebrow">Portfolio Project</p>
-        <h1>Enterprise Risk Dashboard</h1>
-        <p class="subtitle">
-          Synthetic enterprise risk analytics dashboard built for web display.
-        </p>
-      </div>
-    </header>
-
-    <section class="cards">
-      <div class="card">
-        <span>Total Risks</span>
-        <strong id="totalRisks">0</strong>
-      </div>
-      <div class="card">
-        <span>High Risks</span>
-        <strong id="highRisks">0</strong>
-      </div>
-      <div class="card">
-        <span>Avg Impact</span>
-        <strong id="avgImpact">0</strong>
-      </div>
-      <div class="card">
-        <span>Avg Probability</span>
-        <strong id="avgProbability">0</strong>
-      </div>
-    </section>
-
-    <section class="grid">
-      <div class="panel">
-        <h2>Risks by Category</h2>
-        <div id="categoryChart" class="chart"></div>
+  <div class="page">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-badge">ER</div>
+        <div>
+          <h2>Risk Analytics</h2>
+          <p>Executive Monitoring</p>
+        </div>
       </div>
 
-      <div class="panel">
-        <h2>Risk Level Mix</h2>
-        <div id="riskLevelChart" class="chart"></div>
-      </div>
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#distribution">Distribution</a>
+        <a href="#matrix">Risk Matrix</a>
+        <a href="#register">Risk Register</a>
+      </nav>
 
-      <div class="panel full">
-        <h2>5×5 Risk Matrix</h2>
-        <div id="riskMatrix" class="chart tall"></div>
+      <div class="sidebar-note">
+        <p class="small-label">Project Type</p>
+        <p>Synthetic enterprise risk analytics portfolio dashboard.</p>
       </div>
+    </aside>
 
-      <div class="panel full">
-        <h2>Detailed Risk Register</h2>
+    <main class="main">
+      <section class="hero" id="overview">
+        <div>
+          <p class="eyebrow">Portfolio Project</p>
+          <h1>Enterprise Risk Dashboard</h1>
+          <p class="hero-text">
+            Executive overview of synthetic enterprise risk exposure, prioritization,
+            and category-level monitoring.
+          </p>
+        </div>
+        <div class="hero-chip">Board Reporting View</div>
+      </section>
+
+      <section class="cards">
+        <div class="card">
+          <span>Total Risks</span>
+          <strong id="totalRisks">0</strong>
+          <small>Active portfolio risks</small>
+        </div>
+        <div class="card">
+          <span>High Risks</span>
+          <strong id="highRisks">0</strong>
+          <small>Priority exposures</small>
+        </div>
+        <div class="card">
+          <span>Avg Impact</span>
+          <strong id="avgImpact">0</strong>
+          <small>Average severity</small>
+        </div>
+        <div class="card">
+          <span>Avg Probability</span>
+          <strong id="avgProbability">0</strong>
+          <small>Average likelihood</small>
+        </div>
+      </section>
+
+      <section class="two-col" id="distribution">
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Risks by Category</h2>
+            <p>Distribution across business domains</p>
+          </div>
+          <div id="categoryChart" class="chart"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Risk Level Mix</h2>
+            <p>Portfolio composition by severity</p>
+          </div>
+          <div id="riskLevelChart" class="chart"></div>
+        </div>
+      </section>
+
+      <section class="panel full-width" id="matrix">
+        <div class="panel-head">
+          <h2>5×5 Enterprise Risk Matrix</h2>
+          <p>Impact versus probability heatmap</p>
+        </div>
+        <div id="riskMatrix" class="chart matrix-chart"></div>
+      </section>
+
+      <section class="two-col lower-grid">
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Top Risks</h2>
+            <p>Highest scoring exposures</p>
+          </div>
+          <div class="top-risk-list" id="topRisks"></div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <h2>Risk Score by Owner</h2>
+            <p>Average risk score across owners</p>
+          </div>
+          <div id="ownerChart" class="chart"></div>
+        </div>
+      </section>
+
+      <section class="panel full-width" id="register">
+        <div class="panel-head">
+          <h2>Detailed Risk Register</h2>
+          <p>Prioritized synthetic risk inventory</p>
+        </div>
         <div class="table-wrap">
           <table id="riskTable">
             <thead>
@@ -72,8 +132,8 @@
             <tbody></tbody>
           </table>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
   </div>
 
   <script src="script.js"></script>
