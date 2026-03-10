@@ -2,7 +2,6 @@
   --bg: #0b1220;
   --bg-soft: #111a2e;
   --panel: #131d33;
-  --panel-2: #17233d;
   --text: #e5ecf6;
   --muted: #9aa8bf;
   --accent: #5b8cff;
@@ -32,7 +31,7 @@ body {
 }
 
 .sidebar {
-  background: rgba(8, 14, 26, 0.9);
+  background: rgba(8, 14, 26, 0.92);
   border-right: 1px solid var(--border);
   padding: 24px 18px;
   position: sticky;
@@ -288,6 +287,30 @@ body {
 .badge.low {
   background: rgba(34, 197, 94, 0.16);
   color: #8ff0b4;
+}
+
+.selected-cell-info {
+  margin-bottom: 16px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: #dbe5f5;
+}
+
+.hidden {
+  display: none;
+}
+
+.reset-btn {
+  margin-top: 10px;
+  background: #5b8cff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
 }
 
 .table-wrap {
