@@ -1,166 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Enterprise Risk Dashboard | Amanda Paccha</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+<title>Community Risk Intelligence Dashboard</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="page-shell">
-    <aside class="sidebar">
-      <div class="brand-block">
-        <div class="brand-icon">ER</div>
-        <div>
-          <h2>Risk Analytics</h2>
-          <p>Portfolio Dashboard</p>
-        </div>
-      </div>
 
-      <div class="profile-card">
-        <p class="section-label">Featured Project</p>
-        <h3>Enterprise Risk Dashboard</h3>
-        <p>
-          Resume-ready analytics project demonstrating dashboard design, risk scoring,
-          executive reporting, and interactive visualization.
-        </p>
-      </div>
+<h1>Community Risk Intelligence Dashboard</h1>
 
-      <nav class="nav-links">
-        <a href="#overview">Overview</a>
-        <a href="#charts">Charts</a>
-        <a href="#matrix">Risk Matrix</a>
-        <a href="#register">Risk Register</a>
-      </nav>
-    </aside>
+<p>
+This project demonstrates how open data and analytics can be used to identify
+community risk patterns and support better decision making.
+</p>
 
-    <main class="main-content">
-      <section class="hero-card" id="overview">
-        <div>
-          <p class="section-label">Amanda Paccha · Data Analytics Portfolio</p>
-          <h1>Enterprise Risk Dashboard</h1>
-          <p class="hero-text">
-            Executive-style dashboard built with HTML, CSS, JavaScript, and Plotly using
-            synthetic enterprise risk data. Designed to present risk exposure, severity,
-            ownership, and prioritization in a polished, portfolio-ready format.
-          </p>
+<h2>About the Project</h2>
 
-          <div class="hero-tags">
-            <span>JavaScript</span>
-            <span>Plotly</span>
-            <span>Dashboard Design</span>
-            <span>Risk Analytics</span>
-          </div>
-        </div>
+<p>
+The dashboard analyzes simulated risk register data and presents insights through
+interactive visualizations. The goal is to demonstrate how data science tools
+can support public sector planning, community programs, and risk monitoring.
+</p>
 
-        <div class="hero-side">
-          <div class="mini-stat">
-            <span>Project Type</span>
-            <strong>Interactive Web Dashboard</strong>
-          </div>
-          <div class="mini-stat">
-            <span>Data</span>
-            <strong>Synthetic Enterprise Risk Register</strong>
-          </div>
-        </div>
-      </section>
+<h2>Tools Used</h2>
 
-      <section class="kpi-grid">
-        <div class="kpi-card">
-          <span>Total Risks</span>
-          <strong id="totalRisks">0</strong>
-          <small>Portfolio exposures tracked</small>
-        </div>
-        <div class="kpi-card">
-          <span>High Risks</span>
-          <strong id="highRisks">0</strong>
-          <small>Critical priority items</small>
-        </div>
-        <div class="kpi-card">
-          <span>Avg Impact</span>
-          <strong id="avgImpact">0</strong>
-          <small>Severity across risks</small>
-        </div>
-        <div class="kpi-card">
-          <span>Avg Probability</span>
-          <strong id="avgProbability">0</strong>
-          <small>Likelihood across risks</small>
-        </div>
-      </section>
+<ul>
+<li>Python</li>
+<li>Streamlit</li>
+<li>Pandas</li>
+<li>Data Visualization</li>
+<li>GitHub</li>
+</ul>
 
-      <section class="chart-grid" id="charts">
-        <div class="tile">
-          <div class="tile-header">
-            <h2>Risks by Category</h2>
-            <p>Distribution across business domains</p>
-          </div>
-          <div id="categoryChart" class="chart-box"></div>
-        </div>
+<h2>Try the Live Application</h2>
 
-        <div class="tile">
-          <div class="tile-header">
-            <h2>Risk Level Mix</h2>
-            <p>Portfolio composition by severity</p>
-          </div>
-          <div id="riskLevelChart" class="chart-box"></div>
-        </div>
-      </section>
+<p>
+Click the button below to explore the interactive dashboard.
+</p>
 
-      <section class="tile full-width" id="matrix">
-        <div class="tile-header">
-          <h2>5×5 Enterprise Risk Matrix</h2>
-          <p>Impact versus probability with interactive hover and click filtering</p>
-        </div>
-        <div id="riskMatrix" class="chart-box matrix-box"></div>
-      </section>
+<a href="https://amandapacchacommunityproject2.streamlit.app/" target="_blank">
+<button style="font-size:18px;padding:12px 20px;">Launch Dashboard</button>
+</a>
 
-      <section class="chart-grid">
-        <div class="tile">
-          <div class="tile-header">
-            <h2>Top Risks</h2>
-            <p>Highest scoring exposures</p>
-          </div>
-          <div class="top-risk-list" id="topRisks"></div>
-        </div>
+<h2>Project Repository</h2>
 
-        <div class="tile">
-          <div class="tile-header">
-            <h2>Risk Score by Owner</h2>
-            <p>Average risk score across owners</p>
-          </div>
-          <div id="ownerChart" class="chart-box"></div>
-        </div>
-      </section>
+<p>
+You can review the full codebase and documentation here:
+</p>
 
-      <section class="tile full-width" id="register">
-        <div class="tile-header">
-          <h2>Detailed Risk Register</h2>
-          <p>Interactive prioritized view of the synthetic risk inventory</p>
-        </div>
+<a href="https://github.com/amandapacchacommunity/Project2" target="_blank">
+View GitHub Repository
+</a>
 
-        <div id="selectedCellInfo" class="selected-cell-info hidden"></div>
-
-        <div class="table-wrap">
-          <table id="riskTable">
-            <thead>
-              <tr>
-                <th>Risk ID</th>
-                <th>Category</th>
-                <th>Owner</th>
-                <th>Impact</th>
-                <th>Probability</th>
-                <th>Score</th>
-                <th>Level</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </section>
-    </main>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
